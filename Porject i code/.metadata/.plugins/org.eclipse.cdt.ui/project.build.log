@@ -1,0 +1,12 @@
+23:30:21 **** Build of configuration Debug for project project ****
+make all 
+Building file: ../project.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"project.d" -MT"project.o" -c -o "project.o" "../project.c"
+../project.c: In function 'seg6':
+../project.c:134: error: called object '3' is not a function
+make: *** [project.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+23:30:22 Build Failed. 2 errors, 0 warnings. (took 214ms)
+

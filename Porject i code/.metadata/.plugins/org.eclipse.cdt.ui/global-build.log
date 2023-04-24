@@ -1,0 +1,31 @@
+09:27:53 **** Incremental Build of configuration Debug for project interface_porject ****
+make all 
+Building file: ../interface_porject.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"interface_porject.d" -MT"interface_porject.o" -c -o "interface_porject.o" "../interface_porject.c"
+Finished building: ../interface_porject.c
+ 
+Building target: interface_porject.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,interface_porject.map -mmcu=atmega32 -o "interface_porject.elf"  ./interface_porject.o   
+Finished building target: interface_porject.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S interface_porject.elf  >"interface_porject.lss"
+Finished building: interface_porject.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 interface_porject.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1084 bytes (3.3% Full)
+(.text + .data + .bootloader)
+
+Data:          6 bytes (0.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
